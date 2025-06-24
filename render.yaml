@@ -5,6 +5,7 @@ services:
     plan: free
     branch: master
     dockerfilePath: ./Dockerfile
+    Runtime: PHP
     envVars:
       - key: APP_ENV
         value: production
