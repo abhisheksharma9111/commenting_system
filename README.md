@@ -24,7 +24,7 @@ A Laravel-based commenting system with support for nested replies (up to 3 level
 ### 1. Clone the Repository
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/abhisheksharma9111/commenting_system.git
 cd commenting-system
 ````
 
