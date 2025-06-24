@@ -1,13 +1,10 @@
 services:
   - type: web
     name: commenting-system
-    env: php
+    env: docker
     plan: free
-    buildCommand: |
-      composer install --no-dev
-      php artisan config:cache
-      php artisan migrate --force
-    startCommand: php artisan serve --host=0.0.0.0 --port=$PORT
+    branch: master
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: APP_ENV
         value: production
